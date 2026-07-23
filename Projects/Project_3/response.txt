@@ -1,0 +1,9 @@
+Based on the provided subtitle chunks, it appears that the inline elements are taught in Video 8 of the Sigma Web Development course.
+
+Specifically:
+
+* The first mention of "inline" is at time 79.24 seconds, where the instructor explains what inline elements are and why they're useful.
+* The second mention of "inline" is at time 371.24 seconds, where the instructor lists some examples of inline elements.
+* The third mention of "inline" is at time 616.24 seconds, where the instructor compares and contrasts inline and block elements.
+
+So, to answer your question, inline elements are taught in Video 8 of the Sigma Web Development course, starting from approximately 79.24 seconds until 618.24 seconds.

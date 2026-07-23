@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>{% block title %}My App{% endblock %}</title>
+</head>
+<body>
+    {%block nav %}<nav>this is my NavBar.</nav>{% endblock %}
+  <header>
+    <h1>My Flask App</h1>
+  </header>
+
+  <main>
+    {% block content %}{% endblock %}
+  </main>
+  <footer>
+    {% block footer %}<p>All Rights Reversed @ Uttam Kanojiya @2026.</p>{% endblock %}
+  </footer>
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House Price Predictor</title>
+</head>
+
+<body>
+    <h2>House Price Predictor</h2>
+
+    Area (sq ft): <input id="area" type="number" placeholder="e.g. 1200"> <br><br>
+    No. of Bedrooms: <input id="bedrooms" type="number" placeholder="e.g. 3"> <br><br>
+    Resale (0 or 1): <input id="resale" type="number" placeholder="0 or 1"> <br><br>
+
+    <b>Amenities (0 = No, 1 = Yes):</b><br><br>
+    MaintenanceStaff: <input id="MaintenanceStaff" type="number" value="0">
+    Gymnasium: <input id="Gymnasium" type="number" value="0">
+    SwimmingPool: <input id="SwimmingPool" type="number" value="0">
+    LandscapedGardens: <input id="LandscapedGardens" type="number" value="0"><br><br>
+    JoggingTrack: <input id="JoggingTrack" type="number" value="0">
+    RainWaterHarvesting: <input id="RainWaterHarvesting" type="number" value="0">
+    IndoorGames: <input id="IndoorGames" type="number" value="0">
+    ShoppingMall: <input id="ShoppingMall" type="number" value="0"><br><br>
+    Intercom: <input id="Intercom" type="number" value="0">
+    SportsFacility: <input id="SportsFacility" type="number" value="0">
+    ATM: <input id="ATM" type="number" value="0">
+    ClubHouse: <input id="ClubHouse" type="number" value="0"><br><br>
+    School: <input id="School" type="number" value="0">
+    24X7Security: <input id="24X7Security" type="number" value="0">
+    PowerBackup: <input id="PowerBackup" type="number" value="0">
+    CarParking: <input id="CarParking" type="number" value="0"><br><br>
+    StaffQuarter: <input id="StaffQuarter" type="number" value="0">
+    Cafeteria: <input id="Cafeteria" type="number" value="0">
+    MultipurposeRoom: <input id="MultipurposeRoom" type="number" value="0">
+    Hospital: <input id="Hospital" type="number" value="0"><br><br>
+    WashingMachine: <input id="WashingMachine" type="number" value="0">
+    Gasconnection: <input id="Gasconnection" type="number" value="0">
+    AC: <input id="AC" type="number" value="0">
+    Wifi: <input id="Wifi" type="number" value="0"><br><br>
+    Children'splayarea: <input id="Childrensplayarea" type="number" value="0">
+    LiftAvailable: <input id="LiftAvailable" type="number" value="0">
+    BED: <input id="BED" type="number" value="0">
+    VaastuCompliant: <input id="VaastuCompliant" type="number" value="0"><br><br>
+    Microwave: <input id="Microwave" type="number" value="0">
+    GolfCourse: <input id="GolfCourse" type="number" value="0">
+    TV: <input id="TV" type="number" value="0">
+    DiningTable: <input id="DiningTable" type="number" value="0"><br><br>
+    Sofa: <input id="Sofa" type="number" value="0">
+    Wardrobe: <input id="Wardrobe" type="number" value="0">
+    Refrigerator: <input id="Refrigerator" type="number" value="0"><br><br>
+
+    <button onclick="predict()">Predict Price</button>
+    <p id="result"></p>
+
+    <script>
+        function g(id) {
+            return parseFloat(document.getElementById(id).value) || 0;
+        }
+
+        function predict() {
+            fetch("http://127.0.0.1:5000/predict", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({
+                    "Price": 0,
+                    "Area": g("area"),
+                    "No. of Bedrooms": g("bedrooms"),
+                    "Resale": g("resale"),
+                    "MaintenanceStaff": g("MaintenanceStaff"),
+                    "Gymnasium": g("Gymnasium"),
+                    "SwimmingPool": g("SwimmingPool"),
+                    "LandscapedGardens": g("LandscapedGardens"),
+                    "JoggingTrack": g("JoggingTrack"),
+                    "RainWaterHarvesting": g("RainWaterHarvesting"),
+                    "IndoorGames": g("IndoorGames"),
+                    "ShoppingMall": g("ShoppingMall"),
+                    "Intercom": g("Intercom"),
+                    "SportsFacility": g("SportsFacility"),
+                    "ATM": g("ATM"),
+                    "ClubHouse": g("ClubHouse"),
+                    "School": g("School"),
+                    "24X7Security": g("24X7Security"),
+                    "PowerBackup": g("PowerBackup"),
+                    "CarParking": g("CarParking"),
+                    "StaffQuarter": g("StaffQuarter"),
+                    "Cafeteria": g("Cafeteria"),
+                    "MultipurposeRoom": g("MultipurposeRoom"),
+                    "Hospital": g("Hospital"),
+                    "WashingMachine": g("WashingMachine"),
+                    "Gasconnection": g("Gasconnection"),
+                    "AC": g("AC"),
+                    "Wifi": g("Wifi"),
+                    "Children'splayarea": g("Childrensplayarea"),
+                    "LiftAvailable": g("LiftAvailable"),
+                    "BED": g("BED"),
+                    "VaastuCompliant": g("VaastuCompliant"),
+                    "Microwave": g("Microwave"),
+                    "GolfCourse": g("GolfCourse"),
+                    "TV": g("TV"),
+                    "DiningTable": g("DiningTable"),
+                    "Sofa": g("Sofa"),
+                    "Wardrobe": g("Wardrobe"),
+                    "Refrigerator": g("Refrigerator")
+                })
+            })
+            .then(res => {
+                if (!res.ok) throw new Error("Server error: " + res.status);
+                return res.json();
+            })
+            .then(data => {
+                if (data.error) {
+                    document.getElementById("result").innerHTML = "Error: " + data.error;
+                } else {
+                    document.getElementById("result").innerHTML = "Predicted Price: ₹" + data.predicted_price.toFixed(2);
+                }
+            })
+            .catch(err => {
+                document.getElementById("result").innerHTML = "Request failed: " + err.message;
+            });
+        }
+    </script>
+</body>
+</html>
