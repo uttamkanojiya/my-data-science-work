@@ -1,0 +1,146 @@
+Here are the interview preparation questions tailored to the target role of Data Analysis, along with the required information:
+
+**HR Round:**
+
+1. Can you tell me about your educational background and how it has prepared you for a Data Analysis role?
+	* Difficulty: Easy
+	* Why: This question assesses the candidate's educational background and how it relates to the target role. It's a common icebreaker question that helps the interviewer understand the candidate's foundation.
+2. What motivates you to work in Data Analysis, and what do you hope to achieve in this role?
+	* Difficulty: Easy
+	* Why: This question helps the interviewer understand the candidate's motivations and goals. It's essential to understand what drives the candidate to apply for the role.
+3. Can you walk me through a time when you had to communicate complex data insights to a non-technical audience?
+	* Difficulty: Medium
+	* Why: This question evaluates the candidate's ability to communicate complex data insights effectively. It's crucial for a Data Analysis role, where stakeholders may not have a technical background.
+4. How do you stay current with new tools and technologies in the Data Analysis field?
+	* Difficulty: Easy
+	* Why: This question assesses the candidate's willingness to learn and adapt to new technologies. It's essential for a Data Analysis role, where new tools and technologies are constantly emerging.
+5. Can you describe a project you worked on that involved data visualization? What tools did you use, and what insights did you gain?
+	* Difficulty: Medium
+	* Why: This question evaluates the candidate's experience with data visualization tools and techniques. It's essential for a Data Analysis role, where data visualization is often used to communicate insights to stakeholders.
+6. How do you handle conflicting priorities or tight deadlines in a Data Analysis project?
+	* Difficulty: Medium
+	* Why: This question assesses the candidate's ability to manage their time and prioritize tasks effectively. It's essential for a Data Analysis role, where multiple projects and deadlines often need to be managed simultaneously.
+7. Can you tell me about a time when you had to work with a cross-functional team to solve a data-related problem?
+	* Difficulty: Medium
+	* Why: This question evaluates the candidate's ability to collaborate with others and work on a team to achieve a common goal. It's essential for a Data Analysis role, where teams often work together to solve complex data problems.
+8. How do you ensure the accuracy and quality of your data analysis work?
+	* Difficulty: Medium
+	* Why: This question assesses the candidate's attention to detail and commitment to quality. It's essential for a Data Analysis role, where accuracy and quality are critical.
+9. Can you describe your experience with data modeling and database management?
+	* Difficulty: Hard
+	* Why: This question evaluates the candidate's technical skills in data modeling and database management. It's essential for a Data Analysis role, where understanding database structures and data models is crucial.
+10. Can you tell me about a time when you had to present your findings to stakeholders and recommend actions based on your analysis?
+	* Difficulty: Hard
+	* Why: This question assesses the candidate's ability to communicate complex data insights effectively and provide actionable recommendations. It's essential for a Data Analysis role, where stakeholders often rely on data analysis to inform their decisions.
+
+**Technical Round:**
+
+Easy Questions:
+
+1. What is your favorite data visualization tool, and why do you like it?
+	* Difficulty: Easy
+	* Why: This question assesses the candidate's familiarity with data visualization tools and their ability to explain why they prefer a particular tool.
+2. Can you explain the difference between supervised and unsupervised learning algorithms?
+	* Difficulty: Easy
+	* Why: This question evaluates the candidate's understanding of fundamental machine learning concepts.
+3. What is the purpose of data normalization, and when would you use it?
+	* Difficulty: Easy
+	* Why: This question assesses the candidate's understanding of data preprocessing techniques and their application.
+4. Can you describe the concept of correlation vs. causation, and how you would handle this in a data analysis project?
+	* Difficulty: Easy
+	* Why: This question evaluates the candidate's understanding of statistical concepts and their ability to apply them in a data analysis context.
+5. What is the difference between a regression model and a decision tree, and when would you use each?
+	* Difficulty: Easy
+	* Why: This question assesses the candidate's understanding of machine learning algorithms and their application.
+
+Medium Questions:
+
+1. Can you explain the concept of ensemble learning and how it is used in data analysis?
+	* Difficulty: Medium
+	* Why: This question evaluates the candidate's understanding of advanced machine learning concepts and their application.
+2. Can you describe the process of feature engineering, and how you would go about it in a data analysis project?
+	* Difficulty: Medium
+	* Why: This question assesses the candidate's understanding of data preprocessing techniques and their application.
+3. What is the difference between a clustering algorithm and a dimensionality reduction technique, and when would you use each?
+	* Difficulty: Medium
+	* Why: This question evaluates the candidate's understanding of machine learning algorithms and their application.
+4. Can you explain the concept of overfitting, and how you would handle it in a data analysis project?
+	* Difficulty: Medium
+	* Why: This question assesses the candidate's understanding of machine learning algorithms and their application.
+5. Can you describe the process of data wrangling, and how you would go about it in a data analysis project?
+	* Difficulty: Medium
+	* Why: This question assesses the candidate's understanding of data preprocessing techniques and their application.
+
+Hard Questions:
+
+1. Can you explain the concept of hyperparameter tuning, and how you would go about it in a data analysis project?
+	* Difficulty: Hard
+	* Why: This question evaluates the candidate's understanding of advanced machine learning concepts and their application.
+2. Can you describe the process of model selection, and how you would go about it in a data analysis project?
+	* Difficulty: Hard
+	* Why: This question assesses the candidate's understanding of machine learning algorithms and their application.
+3. Can you explain the concept of data drift, and how you would handle it in a data analysis project?
+	* Difficulty: Hard
+	* Why: This question evaluates the candidate's understanding of data preprocessing techniques and their application.
+4. Can you describe the process of model interpretability, and how you would go about it in a data analysis project?
+	* Difficulty: Hard
+	* Why: This question assesses the candidate's understanding of machine learning algorithms and their application.
+5. Can you explain the concept of explainability, and how you would go about it in a data analysis project?
+	* Difficulty: Hard
+	* Why: This question evaluates the candidate's understanding of machine learning algorithms and their application.
+
+**Coding Round:**
+
+Easy Questions:
+
+1. Write a Python function to calculate the mean absolute error (MAE) of a dataset.
+	* Difficulty: Easy
+	* Why: This question assesses the candidate's proficiency in Python and their ability to implement a simple data analysis function.
+2. Write a SQL query to retrieve the top 10 customers with the highest total order value.
+	* Difficulty: Easy
+	* Why: This question evaluates the candidate's proficiency in SQL and their ability to write a simple query.
+3. Write a Python function to perform data normalization on a dataset.
+	* Difficulty: Easy
+	* Why: This question assesses the candidate's proficiency in Python and their ability to implement a data preprocessing technique.
+4. Write a Python function to calculate the correlation coefficient between two variables.
+	* Difficulty: Easy
+	* Why: This question evaluates the candidate's proficiency in Python and their ability to implement a statistical calculation.
+5. Write a Python function to create a scatter plot of a dataset using Matplotlib.
+	* Difficulty: Easy
+	* Why: This question assesses the candidate's proficiency in Python and their ability to visualize data.
+
+Medium Questions:
+
+1. Write a Python function to perform feature engineering on a dataset, including encoding categorical variables and scaling numerical variables.
+	* Difficulty: Medium
+	* Why: This question evaluates the candidate's proficiency in Python and their ability to implement advanced data preprocessing techniques.
+2. Write a SQL query to retrieve the top 10 products with the highest sales revenue, along with their corresponding sales data.
+	* Difficulty: Medium
+	* Why: This question assesses the candidate's proficiency in SQL and their ability to write a complex query.
+3. Write a Python function to perform model selection on a dataset, including metrics such as accuracy, precision, and recall.
+	* Difficulty: Medium
+	* Why: This question evaluates the candidate's proficiency in Python and their ability to implement machine learning algorithms.
+4. Write a Python function to create a regression model using Scikit-learn, including model selection and hyperparameter tuning.
+	* Difficulty: Medium
+	* Why: This question assesses the candidate's proficiency in Python and their ability to implement machine learning algorithms.
+5. Write a Python function to perform data wrangling on a dataset, including handling missing values and data normalization.
+	* Difficulty: Medium
+	* Why: This question evaluates the candidate's proficiency in Python and their ability to implement advanced data preprocessing techniques.
+
+Hard Questions:
+
+1. Write a Python function to perform hyperparameter tuning on a regression model using GridSearchCV.
+	* Difficulty: Hard
+	* Why: This question evaluates the candidate's proficiency in Python and their ability to implement advanced machine learning techniques.
+2. Write a SQL query to retrieve the top 10 products with the highest sales revenue, along with their corresponding sales data and market trends.
+	* Difficulty: Hard
+	* Why: This question assesses the candidate's proficiency in SQL and their ability to write a complex query with multiple joins and subqueries.
+3. Write a Python function to perform model interpretability on a regression model using SHAP values.
+	* Difficulty: Hard
+	* Why: This question evaluates the candidate's proficiency in Python and their ability to implement advanced machine learning techniques.
+4. Write a Python function to perform data quality checks on a dataset, including data validation and data normalization.
+	* Difficulty: Hard
+	* Why: This question assesses the candidate's proficiency in Python and their ability to implement advanced data preprocessing techniques.
+5. Write a Python function to perform data visualization on a dataset using Plotly.
+	* Difficulty: Hard
+	* Why: This question evaluates the candidate's proficiency in Python and their ability to visualize complex data using interactive visualizations.
